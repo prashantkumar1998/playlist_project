@@ -1,0 +1,34 @@
+from django import models
+
+class playlist(models.model):
+    playlist_id = models.autofeild()
+    name = models.CharField()
+    song_id = models.ManyToMany(song)
+
+
+class songs(models.model):
+    song_id = models.autofeild()
+    name = models.Charfeild()
+
+
+'''
+1. user can create/update and delete playlist
+2. user can see all song
+3. user can add/delete/list song in there playlist
+4. user can list all playlist
+5. user can have details of playlist
+'''
+
+api/users/{id}/playlists    api/users/{id}/playlists/{id}
+verb - post, get, patch, delete
+
+
+api/songs
+verb - get
+
+
+api/users/{id}/modifi-playlists/{id}
+verb - post, delete
+
+vedant@indee.tv
+9828615238
